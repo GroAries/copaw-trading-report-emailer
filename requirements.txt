@@ -1,0 +1,21 @@
+# 交易报告邮件发送器 - 依赖包
+# 此技能仅使用Python标准库，无需额外安装
+
+# Python标准库依赖
+# email: 邮件处理
+# smtplib: SMTP客户端
+# json: JSON处理
+# os: 系统操作
+# logging: 日志记录
+# argparse: 命令行参数解析
+# datetime: 日期时间处理
+
+# 版本要求
+# Python >= 3.6
+
+# 如果需要额外功能，可以添加以下可选依赖：
+# python-dotenv>=1.0.0  # 环境变量管理（可选）
+# colorama>=0.4.6       # 终端颜色输出（可选）
+
+# 安装可选依赖：
+# pip install python-dotenv colorama

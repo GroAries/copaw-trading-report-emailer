@@ -1,0 +1,55 @@
+{
+  "email_config": {
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "sender_email": "your_email@qq.com",
+    "sender_password": "your_authorization_code_here",
+    "receiver_email": "recipient@example.com"
+  },
+  
+  "default_reports": {
+    "贵州茅台": {
+      "stock_code": "600519.SS",
+      "stock_name": "贵州茅台",
+      "default_txt_report": "trading_report_600519.SS_*.txt",
+      "default_html_report": "trading_report_600519.SS_*.html"
+    },
+    "阿里巴巴": {
+      "stock_code": "BABA",
+      "stock_name": "阿里巴巴",
+      "default_txt_report": "trading_report_BABA_*.txt",
+      "default_html_report": "trading_report_BABA_*.html"
+    }
+  },
+  
+  "system_info": {
+    "system_name": "全天候交易系统",
+    "system_version": "v5.0",
+    "training_samples": 1456,
+    "accuracy_rate": 0.845,
+    "market_modes": ["牛市", "熊市", "震荡市"],
+    "optimized_for": ["A股T+1", "涨跌停板规则", "中国股市特有规则"]
+  },
+  
+  "notification_settings": {
+    "send_on_success": true,
+    "send_on_failure": true,
+    "send_summary_only": false,
+    "include_attachments": true,
+    "max_file_size_mb": 10
+  },
+  
+  "security_notes": [
+    "⚠️ 重要安全提示:",
+    "1. 此文件包含敏感信息，请勿提交到版本控制系统",
+    "2. 建议将授权码存储在环境变量中",
+    "3. 定期更新授权码以提高安全性",
+    "4. 使用后及时删除或移动此文件"
+  ],
+  
+  "usage_examples": {
+    "python_command": "python send_trading_report.py --config email_config.json --stock 600519.SS --name '贵州茅台'",
+    "environment_variables": "QQ_EMAIL=your_email@qq.com QQ_EMAIL_AUTH_CODE=your_code RECEIVER_EMAIL=recipient@example.com",
+    "quick_command": "python send_trading_report.py --quick --stock 600519.SS"
+  }
+}
