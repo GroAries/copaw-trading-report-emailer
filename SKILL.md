@@ -7,7 +7,7 @@ created: "2026-03-23"
 metadata:
   category: "communication"
   tags: ["email", "trading", "report", "communication"]
-  requires: ["python3", "smtplib"]
+  requires: { "bins": ["python3", "smtplib"] }
   related_skills: ["all_weather_trading_system"]
 ---
 
